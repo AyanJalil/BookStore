@@ -4,12 +4,11 @@ import Footer from './Footer'
 import { useForm } from "react-hook-form";
 
 
-function Contact() {
+function ContactMid() {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
   return (
     <>
-    <Navbar/>
     <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 pt-28'>
         <div className='flex justify-center items-center'>
             <form action="" onSubmit={handleSubmit(onSubmit)} className='w-[500px] text-xl space-y-4'>
@@ -42,9 +41,8 @@ function Contact() {
             </form>
         </div>
     </div>
-    <Footer/>
     </>
   )
 }
 
-export default Contact
+export default ContactMid

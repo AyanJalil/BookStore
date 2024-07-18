@@ -2,10 +2,9 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
-function About() {
+function AboutMid() {
   return (
     <>
-    <Navbar/>
     <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-900 pt-28">
       <section className="mb-8">
         <h1 className="text-3xl font-semibold mb-2">About Us</h1>
@@ -23,9 +22,8 @@ function About() {
       </section>
       
     </div>
-    <Footer/>
     </>
   )
 }
 
-export default About
+export default AboutMid
