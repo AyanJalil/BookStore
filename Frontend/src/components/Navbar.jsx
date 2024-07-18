@@ -13,7 +13,7 @@ const navItems = <>
             <a href='/Contact'>Contact</a>
         </li>
         <li>
-            <a href='About'>About</a>
+            <a href='/About'>About</a>
         </li>
 </>
 function Navbar() {
