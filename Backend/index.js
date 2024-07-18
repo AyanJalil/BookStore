@@ -5,10 +5,13 @@ import bookRoute from './route/book.route.js'
 import userroute from './route/user.route.js';
 import cors from 'cors';
 
-
-dotenv.config();
 const App = express();
-App.use(cors());
+dotenv.config();
+
+
+App.use(cors({
+    "origins":"*"
+}));
 App.use(express.json());
 
 const PORT = process.env.PORT || 4000;
