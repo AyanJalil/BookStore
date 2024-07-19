@@ -57,7 +57,7 @@ function Signup() {
                 <div className='space-y-2 mt-2'>
                     <span>Name</span>
                     <br />
-                    <input type="text" className='w-80 px-2 py-1 rounded-md outline-none border' placeholder='Enter Your Full Name' {...register("fullname", { required: true })}/>
+                    <input type="text" className='w-80 px-2 py-1 rounded-md outline-none border dark:bg-slate-800 dark:text-white' placeholder='Enter Your Full Name' {...register("fullname", { required: true })}/>
                     <br />
                     {errors.fullname && <span className='text-sm text-red-600'>This field is required</span>}
                 </div>
@@ -65,14 +65,14 @@ function Signup() {
                 <div className='space-y-2 mt-2'>
                     <span>Email</span>
                     <br />
-                    <input type="email" className='w-80 px-2 py-1 rounded-md outline-none border' placeholder='Enter Your Email' {...register("email", { required: true })}/>
+                    <input type="email" className='w-80 px-2 py-1 rounded-md outline-none border dark:bg-slate-800 dark:text-white' placeholder='Enter Your Email' {...register("email", { required: true })}/>
                     <br />
                     {errors.email && <span className='text-sm text-red-600'>This field is required</span>}
                 </div>
                 <div className='space-y-2 mt-2'>
                     <span>Password</span>
                     <br />
-                    <input type="password" className='w-80 px-2 py-1 rounded-md outline-none border' placeholder='Enter Your Password' {...register("password", { required: true })}/>
+                    <input type="password" className='w-80 px-2 py-1 rounded-md outline-none border dark:bg-slate-800 dark:text-white' placeholder='Enter Your Password' {...register("password", { required: true })}/>
                     <br />
                     {errors.password && <span className='text-sm text-red-600'>This field is required</span>}
                 </div> 

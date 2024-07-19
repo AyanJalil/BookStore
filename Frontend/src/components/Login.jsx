@@ -52,14 +52,14 @@ function Login() {
                 <div className='space-y-2 mt-2'>
                     <span>Email</span>
                     <br />
-                    <input type="email" className='w-80 px-2 py-1 rounded-md outline-none border' placeholder='Enter Your Email'  {...register("email", { required: true })}/>
+                    <input type="email" className='w-80 px-2 py-1 rounded-md outline-none border dark:bg-slate-800 dark:text-white' placeholder='Enter Your Email'  {...register("email", { required: true })}/>
                     <br />
                     {errors.email && <span className='text-sm text-red-600'>This field is required</span>}
                 </div>
                 <div className='space-y-2 mt-6'>
                     <span>Password</span>
                     <br />
-                    <input type="password" className='w-80 px-2 py-1 rounded-md outline-none border' placeholder='Enter Your Password'  {...register("password", { required: true })}/>
+                    <input type="password" className='w-80 px-2 py-1 rounded-md outline-none border dark:bg-slate-800 dark:text-white' placeholder='Enter Your Password'  {...register("password", { required: true })}/>
                     <br />
                     {errors.password && <span className='text-sm text-red-600'>This field is required</span>}
                 </div> 
